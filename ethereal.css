@@ -4,28 +4,23 @@
 }
 
 :root {
-  color: #200222;
-  background: skyblue;
+  color: #111;
+  background-color: #bae;
+  transition: 210ms;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: deepskyblue;
-  }
-}
-
-@media (prefers-contrast: less) {
-  :root {
-    color: #33113d;
-  }
+.toro {
+  color: #111;
+  background-color: #eab;
 }
 
 :any-link {
-  color: #50a;
-  outline-color: #50a;
+  color: inherit;
+  transition: 120ms;
 }
 
-mark {
-  color: #11111d;
-  background: magenta;
+:focus {
+  color: #111;
+  opacity: 1 !important;
+  background-color: #ee1;
 }

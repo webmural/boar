@@ -1,41 +1,32 @@
 html {
   font-family: sans-serif;
-  font-size: calc(1em + 1vmin + 2vmax);
+  font-size: max(3ch, 3vmax);
+  line-height: 1.618;
 }
 
 body {
-  padding: 1em;
   display: flex;
   flex-flow: column;
   margin: auto;
 }
 
-article {
-  line-height: 1.5;
+ol {
+  margin-inline-start: 1em;
+  list-style: disc;
 }
 
-ul {
-  list-style: circle;
+[tabindex] {
+  cursor: crosshair;
+  transition: 120ms;
 }
 
 h1 {
-  margin: 0;
+  font-size: 1.236em;
+  font-weight: 500;
+  display: inline;
 }
 
-h2 {
-  font-size: inherit;
-}
-
-:any-link {
-  text-decoration-style: dotted;
-  text-decoration-thickness: .1em;
-}
-
-:any-link:hover {
-  text-decoration-style: solid;
-}
-
-:focus {
-  outline-width: thick;
-  outline-style: dotted;
-}
+.hoop { padding: 1em }
+:any-link { text-decoration-style: wavy }
+:hover { text-decoration-style: solid }
+:focus { outline: medium groove }
